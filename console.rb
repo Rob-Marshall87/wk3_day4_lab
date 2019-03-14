@@ -9,10 +9,10 @@ Performer.delete_all
 Movie.delete_all
 
 
-movie1 = Movie.new({ 'title' => 'Forest Gump', 'genre' => 'Drama'})
-movie2 = Movie.new({ 'title' => 'Big', 'genre' => 'Comedy'})
-movie3 = Movie.new({ 'title' => 'Die Hard', 'genre' => 'Action'})
-movie4 = Movie.new({ 'title' => 'Sixth Sense', 'genre' => 'Thriller'})
+movie1 = Movie.new({ 'title' => 'Forest Gump', 'genre' => 'Drama', 'budget' => 10000000})
+movie2 = Movie.new({ 'title' => 'Big', 'genre' => 'Comedy', 'budget' => 40000000})
+movie3 = Movie.new({ 'title' => 'Die Hard', 'genre' => 'Action', 'budget' => 40000000})
+movie4 = Movie.new({ 'title' => 'Sixth Sense', 'genre' => 'Thriller', 'budget' => 40000000})
 movie1.save()
 movie1.title = "Lincoln"
 movie1.update
