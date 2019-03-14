@@ -13,10 +13,10 @@ class Movie
   end
 
   def save
-    sql = 'INSERT INTO movies(title, genre)
-    VALUES ($1, $2)
+    sql = 'INSERT INTO movies(title, genre, budget)
+    VALUES ($1, $2, $3)
     RETURNING id'
-    values = [@title, @genre]
+    values = [@title, @genre, @budget]
     movie = SqlRunner.run(sql, values).first
     @id = movie['id'].to_i
   end
